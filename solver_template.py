@@ -4,7 +4,8 @@ sys.path.append('..')
 sys.path.append('../..')
 import argparse
 import utils
-from utils_sp18 import *
+from student_utils_sp18 import *
+from __future__ import division
 
 """
 ======================================================================
@@ -12,7 +13,7 @@ from utils_sp18 import *
 ======================================================================
 """
 
-def min_weighted_dominating_set(G, weight=None):
+def new_min_weighted_dominating_set(G, weight=None):
     """Returns a dominating set that approximates the minimum weight node
     dominating set.
 
@@ -68,7 +69,7 @@ def min_weighted_dominating_set(G, weight=None):
 
         """
         v, neighborhood = node_and_neighborhood
-        return G.nodes[v].get(weight, 1) / len(neighborhood - dom_set)
+        return G.nodes[v].get(weight) / len(neighborhood - dom_set)
 
     # This is a set of all vertices not already covered by the
     # dominating set.
@@ -105,6 +106,8 @@ def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
         Return 2 things. The first is a list of kingdoms representing the walk, and the second is the set of kingdoms that are conquered
     """
     raise Exception('"solve" function not defined')
+    G = adjacency_matrix_to_graph(adjacency_matrix)
+    return new_min_weighted_dominating_set(G, "weight")
     # return closed_walk, conquered_kingdoms
 
 
