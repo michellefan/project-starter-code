@@ -1,3 +1,4 @@
+from __future__ import division
 import os
 import sys
 sys.path.append('..')
@@ -5,8 +6,6 @@ sys.path.append('../..')
 import argparse
 import utils
 from student_utils_sp18 import *
-from __future__ import division
-
 """
 ======================================================================
   Complete the following function.
@@ -105,9 +104,9 @@ def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
     Output:
         Return 2 things. The first is a list of kingdoms representing the walk, and the second is the set of kingdoms that are conquered
     """
-    raise Exception('"solve" function not defined')
+    #raise Exception('"solve" function not defined')
     G = adjacency_matrix_to_graph(adjacency_matrix)
-    return new_min_weighted_dominating_set(G, "weight")
+    return new_min_weighted_dominating_set(G, weight="weight")
     # return closed_walk, conquered_kingdoms
 
 
