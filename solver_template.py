@@ -16,7 +16,7 @@ from networkx.utils import arbitrary_element
 ======================================================================
 """
 
-def new_min_weighted_dominating_set(starting_kingdom, G, weight=None):
+def new_min_weighted_dominating_set(G, weight=None):
     """Returns a dominating set that approximates the minimum weight node
     dominating set.
 
@@ -51,16 +51,24 @@ def new_min_weighted_dominating_set(starting_kingdom, G, weight=None):
     return dom_set
 
 def best_set_permutation(subset, start, dist_dict):
+    subset_list = [node for node in subset]
     shortest_dist =np.inf
     shortest_path = []
-    for elem in list(it.permutations(subset)): #we can't iterate over different orders of a set because it is unordered rip.
-        dist = dist_dict.get(start).get(elem[0])
-        for i in np.range(0, len(elem)):
-            dist += dist_dict.get(elem[i]).get(elem[i+1])
+    permutations = it.permutations(subset_list)
+    for elem in permutations:
+        dist = get_distance(dist_dict, start, elem[0])
+        for i in range(0, len(elem) - 1):
+            dist += get_distance(dist_dict, elem[i], elem[i+1])
+        dist = get_distance(dist_dict, elem[-1], start)
         if dist < shortest_dist:
-            shortest_path = i
+            shortest_path = elem
             shortest_dist = dist
     return shortest_path
+
+def get_distance(dist_dict, start_vertex, end_vertex):
+    start_dict = dist_dict[start_vertex]
+    dist = start_dict[end_vertex]
+    return dist
 
 def recreate_shortest_path(path_dict, start_vertex, end_vertex):
     saved_end = end_vertex
@@ -96,9 +104,9 @@ def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
     graph = adjacency_matrix_to_graph(adjacency_matrix)
     for i in range(len(list_of_kingdom_names)):
         if list_of_kingdom_names[i] == starting_kingdom:
-            start = graph.node[i]
+            start = i
             break
-    dominating_set = new_min_weighted_dominating_set(start, graph, weight='weight')
+    dominating_set = new_min_weighted_dominating_set(graph, weight='weight')
     path_dict, dist_dict = nx.floyd_warshall_predecessor_and_distance(graph, weight='weight')
     shortest_path_through_dom_set = best_set_permutation(dominating_set, start, dist_dict)
     path = final_tour_creator(shortest_path_through_dom_set, path_dict, start)
