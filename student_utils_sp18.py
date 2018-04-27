@@ -2,7 +2,6 @@ import networkx as nx
 from networkx.algorithms import approximation
 import random
 import numpy as np
-import matplotlib.pyplot as plt
 
 random.seed(3)
 
@@ -84,10 +83,10 @@ def cost_of_solution(G, closed_walk, conquered_set):
         conquering_cost = sum([G.nodes[v]['weight'] for v in conquered_set])
         travelling_cost = sum([G.edges[e]['weight'] for e in closed_walk_edges])
         cost = conquering_cost + travelling_cost
-        message += f'The conquering cost of your solution is {conquering_cost}\n'
-        message += f'The travelling cost of your solution is {travelling_cost}\n'
+        message += 'The conquering cost of your solution is {conquering_cost}\n'
+        message += 'The travelling cost of your solution is {travelling_cost}\n'
         
-    message += f'The total cost of your solution is {cost}'
+    message += 'The total cost of your solution is {cost}'
     return cost, message
 
 

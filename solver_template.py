@@ -5,7 +5,9 @@ sys.path.append('../..')
 import argparse
 import utils
 from student_utils_sp18 import *
+import itertools as it
 import numpy as np
+import networkx as nx
 import copy
 from networkx.utils import arbitrary_element
 """
@@ -14,121 +16,21 @@ from networkx.utils import arbitrary_element
 ======================================================================
 """
 
-#https://gist.github.com/mikkelam/ab7966e7ab1c441f947b#file-hamilton-py-L3
-def hamilton(G):
-    F = [(G,[G.nodes()[0]])]
-    n = G.number_of_nodes()
-    while F:
-        graph,path = F.pop()
-        confs = []
-        for node in graph.neighbors(path[-1]):
-            conf_p = path[:]
-            conf_p.append(node)
-            conf_g = nx.Graph(graph)
-            conf_g.remove_node(path[-1])
-            confs.append((conf_g,conf_p))
-        for g,p in confs:
-            if len(p)==n:
-                return p
-            else:
-                F.append((g,p))
-    # print('type:', type(F))
-    return F #i think, im not sure
-
-
-def index_satisfying(iterable, condition):
-    """Returns the index of the first element in `iterable` that
-    satisfies the given condition.
-
-    If no such element is found (that is, when the iterable is
-    exhausted), this returns the length of the iterable (that is, one
-    greater than the last index of the iterable).
-
-    `iterable` must not be empty. If `iterable` is empty, this
-    function raises :exc:`ValueError`.
-
-    """
-    # Pre-condition: iterable must not be empty.
-    for i, x in enumerate(iterable):
-        if condition(x):
-            return i
-    # If we reach the end of the iterable without finding an element
-    # that satisfies the condition, return the length of the iterable,
-    # which is one greater than the index of its last element. If the
-    # iterable was empty, `i` will not be defined, so we raise an
-    # exception.
-    try:
-        return i + 1
-    except NameError:
-        raise ValueError('iterable must be non-empty')
-
-
-def hamiltonian_path(G):
-    """Returns a Hamiltonian path in the given tournament graph.
-    """
-    if len(G) == 0:
-        return []
-    if len(G) == 1:
-        return [arbitrary_element(G)]
-    v = arbitrary_element(G)
-    hampath = hamiltonian_path(G.subgraph(set(G) - {v}))
-    # Get the index of the first node in the path that does *not* have
-    # an edge to `v`, then insert `v` before that node.
-    index = index_satisfying(hampath, lambda u: v not in G[u])
-    hampath.insert(index, v)
-    return hampath
-
-#https://github.com/MUSoC/Visualization-of-popular-algorithms-in-Python/tree/master/Travelling%20Salesman%20Problem
-def traveling_salesman_problem(G, kingdoms_to_visit, starting_kingdom, weight=None):
-    s_t = steiner_tree(G, kingdoms_to_visit)
-    steiner_tree_vertices = s_t.nodes()
-    odd_degree_vertices = []
-    for v in steiner_tree_vertices:
-        if len(G.edges(nbunch=v)) % 2 == 1:
-            odd_degree_vertices.append((v))
-    odd_subgraph = G.copy()
-
-    temp_edges  = copy.deepcopy(odd_subgraph.edges())
-    for e in temp_edges:
-        # this may be and instead of or, check this
-        if e[0] not in odd_degree_vertices or e[1] not in odd_degree_vertices:
-            odd_subgraph.remove_edge(e[0], e[1])
-    match = maximal_matching(odd_subgraph)
-    for e in match:
-        if e not in s_t.edges():
-            s_t.add_edge(e)
-
-    ham_path = hamiltonian_path(s_t)
-    return ham_path
-
-def steiner_tree(G, kingdoms_to_visit):
-    s_t = nx.algorithms.approximation.steinertree.steiner_tree(G, list(kingdoms_to_visit))
-    return s_t
-
-def maximal_matching(G):
-    r"""Find a maximal matching in the graph.
-    """
-    matching = set()
-    nodes = set()
-    for u, v in G.edges():
-        # If the edge isn't covered, add it to the matching
-        # then remove neighborhood of u and v from consideration.
-        if u not in nodes and v not in nodes and u != v:
-            matching.add((u, v))
-            nodes.add(u)
-            nodes.add(v)
-    return matching
-
-
 def new_min_weighted_dominating_set(starting_kingdom, G, weight=None):
     """Returns a dominating set that approximates the minimum weight node
     dominating set.
-"""
+
+    References
+    ----------
+    .. [1] Vazirani, Vijay V.
+           *Approximation Algorithms*.
+           Springer Science & Business Media, 2001.
+    """
     if len(G) == 0:
         return set()
 
     dom_set = set()
-    dom_set.add(starting_kingdom)
+    # dom_set.add(starting_kingdom)
 
     def _cost(node_and_neighborhood):
         v, neighborhood = node_and_neighborhood
@@ -148,6 +50,35 @@ def new_min_weighted_dominating_set(starting_kingdom, G, weight=None):
 
     return dom_set
 
+def best_set_permutation(subset, start, dist_dict):
+    shortest_dist =np.inf
+    shortest_path = []
+    for elem in list(it.permutations(subset)): #we can't iterate over different orders of a set because it is unordered rip.
+        dist = dist_dict.get(start).get(elem[0])
+        for i in np.range(0, len(elem)):
+            dist += dist_dict.get(elem[i]).get(elem[i+1])
+        if dist < shortest_dist:
+            shortest_path = i
+            shortest_dist = dist
+    return shortest_path
+
+def recreate_shortest_path(path_dict, start_vertex, end_vertex):
+    saved_end = end_vertex
+    start_dict = path_dict[start_vertex]
+    path = []
+    while end_vertex != start_vertex:
+        path.append(start_dict[end_vertex])
+        end_vertex = start_dict[end_vertex]
+    path.reverse()
+    return path
+
+def final_tour_creator(path_through_subset, path_dict, start):
+    path = recreate_shortest_path(path_dict, start, path_through_subset[0])
+    for i in np.range(len(path_through_subset)):
+        path.append(recreate_shortest_path(path_dict, path_through_subset[i], path_through_subset[i+1]))
+    path.append(recreate_shortest_path(path_dict, start, path_through_subset[0]))
+    return path
+
 def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
     """
     Write your algorithm here.
@@ -163,8 +94,14 @@ def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
     # return closed_walk, conquered_kingdoms
 
     graph = adjacency_matrix_to_graph(adjacency_matrix)
-    dominating_set = new_min_weighted_dominating_set(starting_kingdom, graph, weight='weight')
-    path = traveling_salesman_problem(graph, dominating_set, starting_kingdom, weight='weight')
+    for i in range(len(list_of_kingdom_names)):
+        if list_of_kingdom_names[i] == starting_kingdom:
+            start = graph.node[i]
+            break
+    dominating_set = new_min_weighted_dominating_set(start, graph, weight='weight')
+    path_dict, dist_dict = nx.floyd_warshall_predecessor_and_distance(graph, weight='weight')
+    shortest_path_through_dom_set = best_set_permutation(dominating_set, start, dist_dict)
+    path = final_tour_creator(shortest_path_through_dom_set, path_dict, start)
     return path, list(dominating_set)
 
 
@@ -185,7 +122,7 @@ def solve_from_file(input_file, output_directory, params=[]):
 
     basename, filename = os.path.split(input_file)
     output_filename = utils.input_to_output(filename)
-    output_file = '{output_directory}/{output_filename}'
+    output_file = output_directory + '/' + output_filename
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
     utils.write_data_to_file(output_file, closed_walk, ' ')
