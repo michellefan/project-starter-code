@@ -9,7 +9,7 @@ import itertools as it
 import numpy as np
 import networkx as nx
 import copy
-from networkx.utils import arbitrary_element
+from random import shuffle
 """
 ======================================================================
   Complete the following function.
@@ -54,7 +54,12 @@ def best_set_permutation(subset, start, dist_dict):
     subset_list = [node for node in subset]
     shortest_dist =np.inf
     shortest_path = []
-    permutations = it.permutations(subset_list)
+    permutations = []
+    for i in range(50):
+        random.shuffle(subset_list)
+        x = copy.deepcopy(subset_list)
+        permutations.append(x)
+    # permutations = it.permutations(subset_list)
     for elem in permutations:
         dist = get_distance(dist_dict, start, elem[0])
         for i in range(0, len(elem) - 1):
@@ -82,9 +87,10 @@ def recreate_shortest_path(path_dict, start_vertex, end_vertex):
 
 def final_tour_creator(path_through_subset, path_dict, start):
     path = recreate_shortest_path(path_dict, start, path_through_subset[0])
-    for i in np.range(len(path_through_subset)):
-        path.append(recreate_shortest_path(path_dict, path_through_subset[i], path_through_subset[i+1]))
-    path.append(recreate_shortest_path(path_dict, start, path_through_subset[0]))
+    for i in range(len(path_through_subset) - 1):
+        path.extend(recreate_shortest_path(path_dict, path_through_subset[i], path_through_subset[i+1]))
+    path.extend(recreate_shortest_path(path_dict, path_through_subset[-1], start))
+    path.extend([start])
     return path
 
 def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
