@@ -55,7 +55,7 @@ def best_set_permutation(subset, start, dist_dict):
     shortest_dist =np.inf
     shortest_path = []
     permutations = []
-    for i in range(50):
+    for i in range(100):
         random.shuffle(subset_list)
         x = copy.deepcopy(subset_list)
         permutations.append(x)
