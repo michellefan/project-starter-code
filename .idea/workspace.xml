@@ -2,22 +2,251 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79bee2ee-dc76-4c6c-86b8-449b235e405d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/inputs/132.in" beforeDir="false" afterPath="$PROJECT_DIR$/inputs/132.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/133.in" beforeDir="false" afterPath="$PROJECT_DIR$/inputs/133.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/745.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/746.in" beforeDir="false" afterPath="$PROJECT_DIR$/inputs/746.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/106.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/107.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/109.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/11.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/112.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/113.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/116.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/117.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/119.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/122.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/123.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/126.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/127.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/129.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/132.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/133.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/136.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/137.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/139.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/142.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/143.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/146.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/147.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/148.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/152.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/153.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/156.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/157.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/158.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/162.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/163.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/166.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/167.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/168.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/172.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/173.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/176.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/177.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/178.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/180.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/181.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/184.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/185.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/190.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/191.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/194.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/195.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/2.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/200.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/201.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/204.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/205.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/21.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/214.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/215.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/220.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/221.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/224.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/225.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/230.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/231.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/234.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/235.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/240.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/241.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/244.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/245.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/25.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/251.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/254.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/255.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/260.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/261.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/264.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/265.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/270.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/271.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/274.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/275.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/282.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/283.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/286.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/287.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/288.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/292.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/293.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/296.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/297.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/298.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/300.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/301.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/304.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/305.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/31.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/311.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/314.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/315.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/320.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/321.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/324.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/325.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/330.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/331.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/334.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/335.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/340.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/341.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/344.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/345.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/35.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/350.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/351.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/354.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/355.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/360.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/361.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/364.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/365.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/370.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/371.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/374.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/382.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/383.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/386.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/387.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/389.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/392.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/393.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/396.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/397.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/399.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/40.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/400.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/404.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/410.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/414.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/420.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/430.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/434.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/441.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/445.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/451.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/455.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/461.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/465.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/471.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/482.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/488.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/489.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/492.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/496.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/498.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/499.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/50.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/501.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/505.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/511.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/515.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/525.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/531.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/54.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/540.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/544.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/550.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/554.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/560.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/570.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/574.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/583.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/587.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/588.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/589.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/593.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/598.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/599.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/6.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/60.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/602.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/608.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/609.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/612.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/616.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/618.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/619.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/622.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/626.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/628.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/629.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/632.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/636.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/638.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/639.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/64.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/643.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/647.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/648.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/649.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/653.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/658.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/659.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/663.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/667.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/668.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/669.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/673.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/677.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/678.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/679.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/680.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/684.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/690.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/694.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/7.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/70.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/703.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/708.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/709.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/718.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/719.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/723.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/727.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/728.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/729.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/733.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/737.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/738.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/739.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/74.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/742.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/748.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/749.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/752.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/8.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/83.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/87.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/88.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/89.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/93.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/97.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/98.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/99.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solver_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/solver_template.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,20 +261,11 @@
       <file leaf-file-name="solver_template.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solver_template.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1266">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="280">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="746.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inputs/746.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -80,7 +300,7 @@
       <file leaf-file-name="student_utils_sp18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student_utils_sp18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="-636">
               <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -91,6 +311,17 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find> </find>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace />
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -100,12 +331,13 @@
         <option value="$PROJECT_DIR$/student_utils_sp18.py" />
         <option value="$PROJECT_DIR$/input_validator.py" />
         <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/solver_template.py" />
         <option value="$PROJECT_DIR$/inputs/130.in" />
         <option value="$PROJECT_DIR$/inputs/131.in" />
         <option value="$PROJECT_DIR$/inputs/132.in" />
         <option value="$PROJECT_DIR$/inputs/133.in" />
         <option value="$PROJECT_DIR$/inputs/746.in" />
+        <option value="$PROJECT_DIR$/inputs/745.in" />
+        <option value="$PROJECT_DIR$/solver_template.py" />
       </list>
     </option>
   </component>
@@ -118,7 +350,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,15 +357,11 @@
               <item name="project-starter-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-starter-code" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="project-starter-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-starter-code" type="462c0819:PsiDirectoryNode" />
-              <item name="inputs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,6 +469,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/solver_template.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -249,10 +483,58 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/solver_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_validator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_utils_sp18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/746.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/solver_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
@@ -375,19 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student_utils_sp18.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/0.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/inputs/130.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3030">
@@ -416,17 +685,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/736.in">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/inputs/746.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="525">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/745.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_utils_sp18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-636">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solver_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1266">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        <state relative-caret-position="280">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
